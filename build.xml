@@ -38,7 +38,7 @@
   <!-- Test and build all files  -->
   <!-- To run this: use "ant" (default) or "ant run" -->
   <target name="run" depends="build">
-    <jacoco:coverage destfile="${target.dir}/jacoco.exec">
+    <jacoco:coverage destfile="${test.build.dir}/jacoco.exec">
     <junit printsummary="on" haltonfailure="yes" fork="on">
         <classpath>
           <path refid="classpath.test" />
